@@ -67,7 +67,7 @@ export default function Home() {
       </div>
 
       <div className="space-y-10">
-        {results.map((item) => (
+        {results.map((item:any) => (
           <div key={item.id} className="flex gap-4 border-b border-gray-900 pb-8 group relative">
             <span className="absolute -top-3 right-0 text-[10px] font-black bg-white text-black px-2 py-0.5 uppercase z-10">
               {item.media_type === 'tv' ? 'TV' : 'Movie'}
